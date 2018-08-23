@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!--<link rel="icon" href="https://clojurescript.org/images/cljs-logo-icon-32.png">-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <div id="app">
+      <h4> Finding Prime Factors with WebWorker </h4>
+
+
+      <div class="input-panel">
+
+        <input type="number" id="v1" value="983476" size="10"/> <button id="primeBtn">&lt; 2543224921 </button>
+
+        <br/>
+        <button id="calcBtn">Find Prime Factors Here</button>
+        <br/>
+        <button id="sendBtn">Find Prime Factors on WebWorker</button>
+
+      </div>
+
+      <div class="webworker-result" id="result">
+
+        &nbsp;
+      </div>
+
+      <div id="counter">
+       0
+      </div>
+
+      <div>
+        <button >Click Me!</button>
+      </div>
+
+    </div>
+
+    <script>
+      var counter = 0;
+      function run_counter() {
+        $("#counter").text(++counter);
+        setTimeout(run_counter, 100);
+      }
+
+      $(function() {
+        run_counter();
+      })
+
+
+    </script>
+
+    <script src="js/compiled/app.js" type="text/javascript"></script>
+
+
+
+
+  </body>
+</html>

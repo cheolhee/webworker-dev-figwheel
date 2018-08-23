@@ -1,0 +1,25 @@
+/* some style */
+
+#app {
+    text-align: center;
+}
+
+.input-panel {
+    margin:10px;
+    text-align: center;
+    font-size:120%;
+}
+
+input[type=number] {
+    text-align: center;
+}
+
+.webworker-result {
+    border:1px solid blue;
+    margin:10px;
+    text-align: center;
+    display:block;
+    padding:20px;
+    font-size:150%;
+
+}
